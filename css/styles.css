@@ -1,0 +1,325 @@
+
+  :root {
+    --color-primary: #935ce5;
+    --color-primary-rover: #76cd80;
+    --color-light-gray: #f0f0f0;
+    --color-light-black: #15111e;
+    --color-white: #ffffff;
+}
+
+/* comando que suaviza as transições internas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fim do comando que suaviza as transições internas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/*Link não visitado */
+#page-footer a {
+    color: var(--color-light-gray);
+    text-decoration: none;
+    width: 5px;
+  }
+  
+  /*Link já visitado*/
+#page-footer a:visited {
+    color: var(--color-light-gray);
+    text-decoration: none;
+    transition: all 0.6s;
+    
+  }
+
+#page-footer a:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.divider {
+    border: 1px solid var(--color-primary);
+    width: 80px;
+    margin: 20px auto;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 17px 40px;
+    font-weight: 700;
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.btn:hover,
+.btn:focus {
+    border-color: var(--color-primary-rover);
+    background-color: var(--color-primary-rover);
+    transition: all 0.6s;
+}
+
+.background-overlay {
+    background-color: var(--color-light-black);
+    opacity: 0.65;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Início do Page header */
+#page-header {
+    /* background-color: var(--color-light-black);
+    padding: 20px; */
+
+    position: relative;
+    background-color: var(--color-light-black);
+    background-image: url("../images/favela-bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+    background-attachment:fixed;
+
+}
+
+#page-header .container {
+    position: relative;
+}
+
+#page-header #page-header-logo img {
+    width: 80px;
+
+}
+
+#page-header #page-header-content {
+    color: var(--color-white);
+    text-align: center;
+    padding: 200px 0;
+}
+
+#page-header #page-header-content h1 {
+    font-size: 72px;
+}
+
+#page-header #page-header-content h2 {
+    font-size: 32px;
+}
+
+/* Fim do Page header */
+
+/* Comeco da frase */
+
+#quote {
+    background-color: var(--color-light-gray);
+    padding: 40px 0;
+
+}
+
+#quote .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#quote #quote-content {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* Fim da frase */
+
+
+
+/* Eventos  */
+#upcoming-events {
+    padding: 100px 0;
+}
+
+#upcoming-events #upcoming-events-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+#upcoming-events #upcoming-events-content .event {
+    text-align: center;
+    width: 450px;
+    overflow: hidden;
+
+}
+
+#upcoming-events #upcoming-events-content .event img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0 1px rgb(0 0 0 / 7%);
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.event:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+
+}
+
+
+
+
+
+#upcoming-events #upcoming-events-content .event h3 {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Fim Eventos  */
+
+/* Explore  */
+
+
+#explore {
+    background-image: url("../images/favela.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#explore #explore-content {
+    color: var(--color-white);
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#explore #explore-content div {
+    width: 500px;
+
+}
+
+#explore #explore-content .section-title {
+    text-align: left;
+}
+
+#explore #explore-content .divider {
+    margin-left: 0;
+}
+
+/* colagem de imagens nft  */
+
+#upcoming-tours .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    gap: 40px;
+}
+
+#upcoming-tours .container div {
+    flex: 1;
+}
+
+#upcoming-tours .container div img {
+    width: 100%;
+
+}
+
+#upcoming-tours .section-title {
+    text-align: left;
+}
+
+#upcoming-tours .divider {
+    margin-left: 0;
+}
+
+#upcoming-tours .upcoming-tours-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#explore #im_logo {
+    position: absolute;
+    right: 550px;
+    top: 20px;
+    margin: 40px;
+    align-items: center;
+    
+}
+
+#explore #im_logo img {
+  
+  transition: all 0.3s;
+}
+
+#explore #im_logo:hover img {
+  opacity: 0.5;
+
+}
+/* Footer  */
+
+#page-footer {
+    background-color: var(--color-light-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Social Media Icons  */
+
+#page-footer .container .social-media-a {
+    display: flex;
+    position: relative;
+    
+    
+}
+
+#page-footer .container .social-media-b {
+    display: flex;
+    position: relative;
+
+}
+
+
